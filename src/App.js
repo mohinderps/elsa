@@ -1,8 +1,13 @@
 import React from "react";
-import AddUser from "./AddUser";
+import { AddUser, AddUser2 } from "./AddUser";
 
 function App() {
-  return <AddUser />;
+  return (
+    <>
+      <AddUser />
+      <AddUser2 />
+    </>
+  );
 }
 
 export default App;
