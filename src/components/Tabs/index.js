@@ -1,5 +1,22 @@
 import React from "react";
 
+// Example of Compound Component.
+// This implementation uses React.cloneElement and React.Children
+//  to share the state between multiple components implicitly.
+
+/**
+ * Usage
+ * 
+ * <Tabs>
+      <Tabs.Tab id="a">Coco</Tabs.Tab>
+      <Tabs.Tab id="b">Up</Tabs.Tab>
+      <Tabs.TabPanels>
+        <Tabs.TabPanel id="a">Miguel</Tabs.TabPanel>
+        <Tabs.TabPanel id="b">Russell</Tabs.TabPanel>
+      </Tabs.TabPanels>
+    </Tabs>
+ */
+
 function TabPanel(props) {
   const { id, activeId, children } = props;
 
