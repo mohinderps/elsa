@@ -1,43 +1,16 @@
-import "./App.css";
-import { Table, Tbody, Td, Thead, Tfoot, Tr, Th } from "./components/Table";
+import React from "react";
+import Tabs from "./components/Tabs";
 
 function App() {
   return (
-    <div>
-      <Table>
-        <Thead>
-          <Tr>
-            <Th>To convert</Th>
-            <Th>into</Th>
-            <Th>multiply by</Th>
-          </Tr>
-        </Thead>
-        <Tbody>
-          <Tr>
-            <Td>inches</Td>
-            <Td>millimetres (mm)</Td>
-            <Td>25.4</Td>
-          </Tr>
-          <Tr>
-            <Td>feet</Td>
-            <Td>centimetres (cm)</Td>
-            <Td>30.48</Td>
-          </Tr>
-          <Tr>
-            <Td>yards</Td>
-            <Td>metres (m)</Td>
-            <Td>0.91444</Td>
-          </Tr>
-        </Tbody>
-        <Tfoot>
-          <Tr>
-            <Th>To convert</Th>
-            <Th>into</Th>
-            <Th>multiply by</Th>
-          </Tr>
-        </Tfoot>
-      </Table>
-    </div>
+    <Tabs>
+      <Tabs.Tab id="a">Coco</Tabs.Tab>
+      <Tabs.Tab id="b">Up</Tabs.Tab>
+      <Tabs.TabPanels>
+        <Tabs.TabPanel id="a">Miguel</Tabs.TabPanel>
+        <Tabs.TabPanel id="b">Russell</Tabs.TabPanel>
+      </Tabs.TabPanels>
+    </Tabs>
   );
 }
 
